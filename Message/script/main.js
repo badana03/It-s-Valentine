@@ -271,30 +271,10 @@ const animationTimeline = () => {
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
-    tl.restart();
+    window.location.href = "../Flower1/index.html";
   });
 };
 
-// Import the data to customize and insert them into page
-const fetchData = () => {
-  fetch("customize.json")
-    .then((data) => data.json())
-    .then((data) => {
-      Object.keys(data).map((customData) => {
-        if (data[customData] !== "") {
-          if (customData === "imagePath") {
-            document
-              .getElementById(customData)
-              .setAttribute("src", data[customData]);
-          } else {
-            document.getElementById(customData).innerText = data[customData];
-          }
-        }
-      });
-    });
-};
-
-// Run fetch and animation in sequence
 const resolveFetch = () => {
   return new Promise((resolve, reject) => {
     fetchData();

@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  background: #ffe6f2;
   margin: 0;
   font-family: "Work Sans", sans-serif;
 }
@@ -214,7 +215,6 @@ body {
 .wish-hbd {
   font-size: 3em;
   margin: 0;
-  /* text-transform: uppercase; */
 }
 
 .wish h5 {
@@ -286,7 +286,7 @@ body {
   }
 
   .wish-hbd {
-    font-size: 2.3em;
+    font-size: 2.1em;
   }
 
   .wish h5 {
